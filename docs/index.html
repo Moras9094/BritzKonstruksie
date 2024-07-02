@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Britz Konstruksie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            font-size: 20px;
+        }
+        .social-icons a:hover {
+            color: #666;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function openTab(tabName) {
+            var i;
+            var tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Britz Konstruksie</h1>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </header>
+    <nav>
+        <a href="#" onclick="openTab('about')">About</a>
+        <a href="#" onclick="openTab('services')">Services</a>
+        <a href="#" onclick="openTab('contact')">Contact</a>
+        <a href="#" onclick="openTab('gallery')">Gallery</a>
+    </nav>
+    <div class="content">
+        <div id="about" class="tab-content active">
+            <h2>About Us</h2>
+            <p>Welcome to Britz Konstruksie, a proud family-owned enterprise, we have been serving our community with dedication and commitment since 1994.
+                Our journey began with a vision to build not just structures, but lasting relationships based on trust, quality, and craftsmanship. Our experience spans a wide range of projects,
+                from residential homes to commercial complexes, each completed with precision and a deep-seated passion for construction. Our team of skilled professionals, led by Hennie Britz,
+				brings expertise and creativity to every project. Whether it's renovating a historic building or constructing a state-of-the-art facility,
+                we approach each endeavor with the same level of integrity and attention to detail that has defined us for more than two decades.As we continue to evolve and expand, our commitment to quality craftsmanship,
+                customer satisfaction, and community engagement remains unwavering. We invite you to explore our portfolio and discover how Britz Konstruksie can turn your vision into reality.
+                We look forward to the opportunity to exceed your expectations and build a brighter future together.</p>
+        </div>
+        <div id="services" class="tab-content">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Construction</li>
+                <li>Renovation</li>
+                <li>Transporting building materials</li>
+				<li>Civil work</li>				
+                <!-- Add more services as needed -->
+            </ul>
+        </div>
+        <div id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <p>Address: 984 Strydom Ln, Rayton, Gauteng</p>
+            <p>Email: britzconstruction@gmail.com, hpbritz@gmail.com</p>
+            <p>Phone: Hennie - 0828630243,  Hennie Jnr - 0740956304,  Renier - 0744809606</p> 
+        </div>
+        <div id="gallery" class="tab-content">
+            <h2>Gallery</h2>
+            <img src="gallery-image1.jpg" alt="Gallery Image 1" width="300">
+            <img src="gallery-image2.jpg" alt="Gallery Image 2" width="300">
+            <img src="gallery-image3.jpg" alt="Gallery Image 3" width="300">
+            <!-- Add more gallery images as needed -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 britzkonstruksie. All rights reserved.</p>
+    </footer>
+</body>
+</html>
